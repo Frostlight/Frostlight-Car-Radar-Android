@@ -7,16 +7,22 @@
     android:layout_height="match_parent"
     tools:context="frostlight.FrostlightCarRadar.MainActivity">
 
-    <TextView
+    <!-- <TextView
         android:id="@+id/message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:text="@string/title_home"
+        android:text="@string/title_radar"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" /> -->
+
+    <fragment
+        android:name="frostlight.FrostlightCarRadar.RadarFragment"
+        android:id="@+id/RadarFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
